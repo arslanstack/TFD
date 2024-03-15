@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "18179614-57ac-4afe-9f00-9640cc6e8451",
+		"name": "TFD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29801289"
+	},
+	"item": [
+		{
+			"name": "Inquiry/Contact Form",
+			"item": [
+				{
+					"name": "Submit Inquiry",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "100 %  Pure Desi Ghee from Buffalo Milk & Butter",
+									"type": "text"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/Muhammad Arslan/Downloads/ghe3.png",
+										"/C:/Users/Muhammad Arslan/Downloads/ghe2.png",
+										"/C:/Users/Muhammad Arslan/Downloads/ghe.png"
+									]
+								},
+								{
+									"key": "product_location",
+									"value": "178",
+									"type": "text"
+								},
+								{
+									"key": "unit_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2500",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "02",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "48",
+									"type": "text"
+								},
+								{
+									"key": "moisture",
+									"value": "99",
+									"type": "text"
+								},
+								{
+									"key": "place_of_origin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "ASG Dairy Farm",
+									"type": "text"
+								},
+								{
+									"key": "model_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "certification",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "100 %  Pure Desi Ghee from Buffalo Milk",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/tfd/api/inquire",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tfd",
+								"api",
+								"inquire"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
