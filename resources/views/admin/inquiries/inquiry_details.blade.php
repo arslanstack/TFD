@@ -31,9 +31,10 @@
                             <div class="col-md-12">
                                 <div class="ibox">
                                     <div class="row ibox-content" style="border: none !important;">
-                                        <div class="col-md-8">
+                                        <div class="col-md-12">
                                             <div class="ibox-title" style="border: none !important;">
                                                 <h5>Inquiry Details</h5>
+                                                <h5 class="float-right">{{ date_formated($inquiry->created_at) }}</h5>
                                             </div>
                                             <div class="ibox-content">
                                                 <div>

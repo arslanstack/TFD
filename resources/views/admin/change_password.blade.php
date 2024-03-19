@@ -2,10 +2,10 @@
 @section('content')
 <div class="row wrapper border-bottom white-bg page-heading">
 	<div class="col-lg-8 col-sm-8 col-xs-8">
-		<h2>Dashboard</h2>
+		<h2>Change Password</h2>
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item">
-				<a href="{{ url('admin') }}">Dashboard</a>
+				<a href="{{ url('admin') }}">Inquiries</a>
 			</li>
 			<li class="breadcrumb-item active">
 				<strong>Change Password</strong>
@@ -84,6 +84,7 @@
 	$('#submit').click(function(e){
 		if($("#change_password_form").valid()){
 			var btn = $(this).ladda();
+			// https://github.com/hakimel/Ladda
 			btn.ladda('start');
 			var value = $("#change_password_form").serialize();
 			$.ajax({
